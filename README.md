@@ -13,8 +13,7 @@ A beautiful React single-page application for plant lovers to explore, learn abo
 
 ## 🚀 Live Demo
 
-[Visit GreenNest](#) _(Add your deployed link here)_
-
+Live link: https://green-nest-00.netlify.app/
 ## 🛠️ Technologies Used
 
 - **React** - Frontend framework
@@ -111,13 +110,6 @@ For Netlify:
 - Update display name and photo
 - Real-time Firebase profile updates
 
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests.
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
 
