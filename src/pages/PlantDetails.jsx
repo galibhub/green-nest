@@ -54,12 +54,13 @@ const PlantDetails = () => {
         className="grid grid-cols-1 lg:grid-cols-2 gap-8"
       >
         {/* Plant Image */}
+        {/* Plant Image */}
         <div className="card bg-base-100 shadow-xl">
-          <figure>
+          <figure className="p-4 bg-white">
             <img
               src={plant.image}
               alt={plant.plantName}
-              className="w-full h-96 object-cover rounded-lg"
+              className="w-full h-auto max-h-96 object-contain rounded-lg"
             />
           </figure>
         </div>
