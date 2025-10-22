@@ -79,106 +79,126 @@ const Register = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-base-200 py-12 px-4">
       <div className="card w-full max-w-md bg-base-100 shadow-xl">
-        <div className="card-body">
-          <h2 className="card-title text-3xl font-bold text-center justify-center mb-6">
+        <div className="card-body p-8">
+          {/* Title */}
+          <h2 className="text-3xl font-bold text-center mb-8">
             Register to GreenNest
           </h2>
 
-          <form onSubmit={handleRegister}>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Name</span>
+          {/* Registration Form */}
+          <form onSubmit={handleRegister} className="space-y-4">
+            {/* Name Field */}
+            <div className="form-control w-full">
+              <label className="label pb-1">
+                <span className="label-text font-medium">Name</span>
               </label>
               <input
                 type="text"
                 name="name"
                 placeholder="Enter your name"
-                className="input input-bordered"
+                className="input input-bordered w-full"
                 value={formData.name}
                 onChange={handleChange}
                 required
               />
             </div>
 
-            <div className="form-control mt-4">
-              <label className="label">
-                <span className="label-text">Email</span>
+            {/* Email Field */}
+            <div className="form-control w-full">
+              <label className="label pb-1">
+                <span className="label-text font-medium">Email</span>
               </label>
               <input
                 type="email"
                 name="email"
                 placeholder="Enter your email"
-                className="input input-bordered"
+                className="input input-bordered w-full"
                 value={formData.email}
                 onChange={handleChange}
                 required
               />
             </div>
 
-            <div className="form-control mt-4">
-              <label className="label">
-                <span className="label-text">Photo URL</span>
+            {/* Photo URL Field */}
+            <div className="form-control w-full">
+              <label className="label pb-1">
+                <span className="label-text font-medium">Photo URL</span>
               </label>
               <input
                 type="url"
                 name="photoURL"
                 placeholder="Enter photo URL"
-                className="input input-bordered"
+                className="input input-bordered w-full"
                 value={formData.photoURL}
                 onChange={handleChange}
+                required
               />
             </div>
 
-            <div className="form-control mt-4">
-              <label className="label">
-                <span className="label-text">Password</span>
+            {/* Password Field */}
+            <div className="form-control w-full">
+              <label className="label pb-1">
+                <span className="label-text font-medium">Password</span>
               </label>
               <div className="relative">
                 <input
                   type={showPassword ? "text" : "password"}
                   name="password"
                   placeholder="Enter your password"
-                  className="input input-bordered w-full pr-10"
+                  className="input input-bordered w-full pr-12"
                   value={formData.password}
                   onChange={handleChange}
                   required
                 />
                 <button
                   type="button"
-                  className="absolute right-3 top-1/2 -translate-y-1/2"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700"
                   onClick={() => setShowPassword(!showPassword)}
                 >
-                  {showPassword ? <FaEyeSlash /> : <FaEye />}
+                  {showPassword ? (
+                    <FaEyeSlash size={18} />
+                  ) : (
+                    <FaEye size={18} />
+                  )}
                 </button>
               </div>
-              <label className="label">
-                <span className="label-text-alt text-xs">
-                  Password must be at least 6 characters with 1 uppercase and 1
-                  lowercase letter
+              <label className="label pt-1">
+                <span className="label-text-alt text-xs text-gray-500">
+                  Must have 6+ characters, 1 uppercase & 1 lowercase letter
                 </span>
               </label>
             </div>
 
-            <div className="form-control mt-6">
-              <button type="submit" className="btn btn-success text-white">
+            {/* Register Button */}
+            <div className="form-control w-full pt-2">
+              <button
+                type="submit"
+                className="btn btn-success text-white w-full"
+              >
                 Register
               </button>
             </div>
           </form>
 
-          <div className="divider">OR</div>
+          {/* Divider */}
+          <div className="divider my-4">OR</div>
 
+          {/* Google Registration Button */}
           <button
             onClick={handleGoogleRegister}
-            className="btn btn-outline btn-success"
+            className="btn btn-outline btn-success w-full"
           >
-            <FaGoogle className="mr-2" />
+            <FaGoogle className="text-lg" />
             Register with Google
           </button>
 
-          <p className="text-center mt-4">
+          {/* Login Link */}
+          <p className="text-center mt-6 text-sm">
             Already have an account?{" "}
-            <Link to="/login" className="link link-success font-semibold">
+            <Link
+              to="/login"
+              className="text-success hover:underline font-semibold"
+            >
               Login here
             </Link>
           </p>
