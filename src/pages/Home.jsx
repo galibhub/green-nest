@@ -96,7 +96,7 @@ const Home = () => {
                   transition={{ duration: 0.8 }}
                   className="max-w-md"
                 >
-                  <h1 className="mb-5 text-5xl font-bold">
+                  <h1 className="mb-6 text-5xl font-bold">
                     Welcome to GreenNest
                   </h1>
                   <p className="mb-5">
