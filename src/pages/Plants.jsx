@@ -79,7 +79,7 @@ const Plants = () => {
                 <img
                   src={plant.image}
                   alt={plant.plantName}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover overflow-hidden"
                 />
               </figure>
               <div className="card-body">
