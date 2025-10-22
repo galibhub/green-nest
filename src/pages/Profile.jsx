@@ -43,7 +43,7 @@ const Profile = () => {
             {/* Profile Photo */}
             <div className="flex justify-center mb-6">
               <div className="avatar">
-                <div className="w-32 rounded-full ring ring-success ring-offset-base-100 ring-offset-2">
+                <div className="w-33 rounded-full ring ring-success ring-offset-base-100 ring-offset-2">
                   <img
                     src={
                       user?.photoURL ||
