@@ -1,0 +1,74 @@
+[
+  {
+    "plantId": 1,
+    "plantName": "Snake Plant",
+    "category": "Air Purifier",
+    "price": 18,
+    "rating": 4.8,
+    "availableStock": 10,
+    "careLevel": "Easy",
+    "description": "A hardy plant that purifies indoor air and thrives in low light.",
+    "image": "https://i.ibb.co.com/4ZvQVgsw/snake.jpg",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 2,
+    "plantName": "Peace Lily",
+    "category": "Flowering Plant",
+    "price": 22,
+    "rating": 4.7,
+    "availableStock": 12,
+    "careLevel": "Medium",
+    "description": "Peace Lilies are elegant indoor plants that bloom with white flowers and help clean the air.",
+    "image": "https://i.ibb.co.com/KcbFMVzw/feey-lmcz-Pem-Wj-QQ-unsplash.jpg",
+    "providerName": "GreenSpace Co."
+  },
+  {
+    "plantId": 3,
+    "plantName": "ZZ Plant",
+    "category": "Low Light",
+    "price": 25,
+    "rating": 4.9,
+    "availableStock": 15,
+    "careLevel": "Easy",
+    "description": "A drought-tolerant indoor plant with shiny leaves that thrives in low light and minimal watering.",
+    "image": "https://i.ibb.co.com/RpvQrMJQ/feey-1gwj-E0c3-PSQ-unsplash.jpg",
+    "providerName": "Leaf & Root Studio"
+  },
+  {
+    "plantId": 4,
+    "plantName": "Spider Plant",
+    "category": "Hanging Plant",
+    "price": 15,
+    "rating": 4.6,
+    "availableStock": 20,
+    "careLevel": "Easy",
+    "description": "A popular indoor hanging plant known for its arching leaves and ability to clean indoor air.",
+    "image": "https://i.ibb.co.com/fYbgB2vj/abel-y-costa-jb-SMvi-XCj-I-unsplash.jpg",
+    "providerName": "EcoNest Store"
+  },
+  {
+    "plantId": 5,
+    "plantName": "Aloe Vera",
+    "category": "Medicinal Plant",
+    "price": 19,
+    "rating": 4.5,
+    "availableStock": 14,
+    "careLevel": "Medium",
+    "description": "A versatile succulent known for its healing gel and minimal care requirements.",
+    "image": "https://i.ibb.co.com/5ggjVZv4/l-s-q3szj-B0-Lj8w-unsplash.jpg",
+    "providerName": "Nature’s Touch"
+  },
+  {
+    "plantId": 6,
+    "plantName": "Monstera",
+    "category": "Decorative Plant",
+    "price": 30,
+    "rating": 4.9,
+    "availableStock": 8,
+    "careLevel": "Medium",
+    "description": "A tropical beauty with large, holey leaves — perfect for modern interior décor.",
+    "image": "https://i.ibb.co.com/6R7Sp1pb/olena-bohovyk-Tp-ALGJo-HFP8-unsplash.jpg",
+    "providerName": "GreenNest Official"
+  }
+]
