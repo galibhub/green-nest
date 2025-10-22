@@ -10,7 +10,7 @@ const PlantDetails = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-  });
+  });``
 
   useEffect(() => {
     fetch("/plant.json")

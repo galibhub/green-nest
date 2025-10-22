@@ -1,16 +1,129 @@
-# React + Vite
+# 🌿 GreenNest - Indoor Plant Care & Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautiful React single-page application for plant lovers to explore, learn about, and book consultations for indoor plants.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔐 **Authentication** - Email/Password & Google Sign-In with Firebase
+- 🌱 **Plant Catalog** - Browse 6+ indoor plants with filtering by category
+- 🛡️ **Protected Routes** - Secure plant details and profile pages
+- 📋 **Plant Details** - View detailed information and book consultations
+- 👤 **User Profile** - Update your name and photo in real-time
+- 📱 **Responsive Design** - Works perfectly on mobile, tablet, and desktop
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[Visit GreenNest](#) _(Add your deployed link here)_
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** - Frontend framework
+- **React Router** - Navigation
+- **Firebase** - Authentication
+- **Tailwind CSS** - Styling
+- **DaisyUI** - UI components
+- **React Toastify** - Notifications
+- **Vite** - Build tool
+
+## 📦 Installation
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/galibhub/green-nest.git
+cd green-nest
+```
+
+2. **Install dependencies**
+```bash
+npm install
+```
+
+3. **Set up Firebase**
+   - Create a Firebase project at [firebase.google.com](https://firebase.google.com)
+   - Enable Email/Password and Google authentication
+   - Copy your config to `src/firebase/firebase.config.js`
+
+4. **Run the development server**
+```bash
+npm run dev
+```
+
+5. **Open in browser**
+   - Visit `http://localhost:5173`
+
+## 🔧 Build for Production
+
+```bash
+npm run build
+```
+
+The build files will be in the `dist` folder.
+
+## 📂 Project Structure
+
+```
+green-plant/
+├── public/
+│   ├── plant.json          # Plant data
+│   └── _redirects          # Netlify routing config
+├── src/
+│   ├── components/         # Reusable components
+│   ├── context/            # Auth context
+│   ├── firebase/           # Firebase config
+│   ├── pages/              # Page components
+│   └── main.jsx            # Entry point
+└── package.json
+```
+
+## 🌐 Deployment
+
+This project is ready to deploy on **Netlify**, **Vercel**, or **Firebase Hosting**.
+
+For Netlify:
+1. Build the project: `npm run build`
+2. Deploy the `dist` folder
+3. Add Firebase environment variables in Netlify settings
+
+## 📝 Usage
+
+1. **Sign Up** - Create an account or use Google Sign-In
+2. **Browse Plants** - Explore plants and filter by category
+3. **View Details** - Click "View Details" to see full information (requires login)
+4. **Book Consultation** - Fill out the consultation form on plant detail pages
+5. **Update Profile** - Edit your name and photo from the profile page
+
+## 🔑 Features Breakdown
+
+### Authentication
+- Email/Password registration with validation
+- Google authentication
+- Password reset via email
+- Protected routes redirect to login
+
+### Plant Management
+- Display all plants from JSON data
+- Filter plants by category
+- Show top-rated plants on homepage
+- Detailed plant information page
+
+### User Profile
+- View user information
+- Update display name and photo
+- Real-time Firebase profile updates
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 👨‍💻 Author
+
+**Galib**  
+GitHub: [@galibhub](https://github.com/galibhub)
+
+---
+
+Made with 💚 by plant lovers, for plant lovers
